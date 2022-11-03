@@ -1,0 +1,52 @@
+{
+  "name": "three-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "home": "https://tomhsiao1260.github.io/three-starter/",
+  "scripts": {
+    "build": "webpack --config ./bundler/webpack.prod.js",
+    "dev": "webpack serve --open --config ./bundler/webpack.dev.js",
+    "lint": "eslint ./src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomHsiao1260/webpack-starter.git"
+  },
+  "author": "Yao Hsiao",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.18.3",
+    "core-js": "^3.22.7",
+    "gsap": "^3.10.4",
+    "stats.js": "^0.17.0",
+    "three": "^0.141.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "file-loader": "^6.2.0",
+    "gh-pages": "^4.0.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "lil-gui": "^0.16.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
